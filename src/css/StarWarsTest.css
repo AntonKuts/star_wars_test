@@ -1,0 +1,14 @@
+.main-container {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  width: 100%;
+  max-width: 900px;
+  border: 2px solid grey;
+  display: flex;
+  text-align: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: self-start;
+  margin: 0 auto;
+}
+
