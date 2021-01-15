@@ -2,11 +2,13 @@ import React from 'react';
 import { number } from "prop-types";
 
 const PlanetsCounter = (props) => {
+
     const {shownPlanets, totalPlanets} = props;
-    return shownPlanets || totalPlanets
+
+    return shownPlanets && totalPlanets
     ? (
         <div className="planets-counter">
-            <p>{`Planets counter: ${shownPlanets}/${totalPlanets}`}</p>
+            <p>{`Counter: ${shownPlanets}/${totalPlanets}`}</p>
         </div>
     )
     : '';

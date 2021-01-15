@@ -1,18 +1,23 @@
 import React from 'react';
 import { object, number } from "prop-types";
+import { Link } from "react-router-dom";
 
 const OnePlanetData = (props) => {
+
     const { planetData, index } = props;
-    const { name, climate = '', residents = '' } = planetData;
+    const { name, climate = '', population = '' } = planetData;
+
     return name
-    ? (
-        <div className="planet-data">
-            <h3>{`Planet № ${index + 1}: ${name}`}</h3>
-            <p>{`Planet climate: ${climate}`}</p>
-            <p>{`Planet residents: ${residents[0]}`}</p>
-        </div>
-    )
-    : '';
+        ? (
+            <Link to={`/planet/${index}/`}>
+                <div className="planet-data">
+                    <h3>{`${index + 1}: ${name}`}</h3>
+                    <p>{climate}</p>
+                    <p>{population}</p>
+                </div>
+            </Link>
+        )
+        : '';
 };
 
 OnePlanetData.propTypes = {

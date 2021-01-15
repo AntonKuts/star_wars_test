@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './css/index.css';
+import './css/StarWarsTest.css';
 import StarWarsTest from './StarWarsTest';
 import reportWebVitals from './reportWebVitals';
 
