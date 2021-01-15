@@ -33,7 +33,7 @@ const StarWarsTest = () => {
             <div className="main-container">
                 <Header
                     totalPlanets={count}
-                    shownPlanets={shownPlanets.length}
+                    shownPlanets={shownPlanets?.length}
                 />
                 <Switch>
                     <Route path="/planet/:id">
